@@ -1,0 +1,8 @@
+plaintext
+plaintext
+Copy code
+__pycache__/
+*.pyc
+env/
+venv/
+*.env

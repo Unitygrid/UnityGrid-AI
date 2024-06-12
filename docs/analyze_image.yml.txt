@@ -1,0 +1,17 @@
+tags:
+  - name: Image Analysis
+    description: Analyze images using AI
+parameters:
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: The image file to analyze
+responses:
+  200:
+    description: Analysis results
+    schema:
+      type: object
+      properties:
+        prediction:
+          type: string
