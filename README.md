@@ -2,7 +2,7 @@
 
 ## Introduction
 
-UnityGrid AI leverages advanced AI technology to deliver smart, personalized insights and content for businesses, ensuring data integrity through blockchain security. Our platform simplifies interactions with AI, empowering companies to innovate and work more efficiently. A.D.I.O.S. exemplifies this with its intuitive interface and powerful automation capabilities.
+UnityGrid AI leverages advanced AI technology to deliver smart, personalized insights and content for businesses, ensuring data integrity through blockchain security. Our platform simplifies interactions with AI, empowering companies to innovate and work more efficiently.focusing on the integration of A.D.I.O.S. (Agent Driven Intelligent Operating System)  A.D.I.O.S. exemplifies this with its intuitive interface and powerful automation capabilities.
 
 ## Key Features
 
