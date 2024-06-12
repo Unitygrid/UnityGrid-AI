@@ -27,8 +27,8 @@ UnityGrid AI leverages advanced AI technology to deliver smart, personalized ins
 ### Installation
 
 ```sh
-git clone https://github.com/your-username/UnityGrid-AI.git
-cd UnityGrid-AI
+git clone https://github.com/your-username/UnityGrid-AGI.git
+cd UnityGrid-AGI
 python3 -m venv pyunitygrid
 source pyunitygrid/bin/activate
 pip install -r requirements.txt
