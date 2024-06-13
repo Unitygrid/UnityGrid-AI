@@ -31,9 +31,9 @@ jobs:
         pip install -r requirements.txt
         sudo apt-get update
         sudo apt-get install -y libopenblas-dev  # Install OpenBLAS
-        pip install pytest  # Install pytest
+        pip install pytest pytest-cov  # Install pytest and pytest-cov
 
-    - name: Run tests
+    - name: Run tests with coverage
       run: |
         source venv/bin/activate
         pytest --cov=src --cov-report=xml
