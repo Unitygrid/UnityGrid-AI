@@ -1,5 +1,5 @@
 import unittest
-from ai-modules.visual_analysis import analyze_image
+from ai_modules.visual_analysis import analyze_image
 
 class TestVisualAnalysis(unittest.TestCase):
 
