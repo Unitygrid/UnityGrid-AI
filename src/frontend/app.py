@@ -101,10 +101,10 @@ def analyze_image_swagger():
     def generate_text_route_swagger():
         # Implementation here
 
-@app.route('/adios-task', methods=['POST'])
-@swag_from('docs/adios_task.yml')
-def adios_task_swagger():
-    # Implementation here
+    @app.route('/adios-task', methods=['POST'])
+    @swag_from('docs/adios_task.yml')
+    def adios_task_swagger():
+        # Implementation here
 
 app.config.from_object(config)
 
