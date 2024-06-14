@@ -104,10 +104,10 @@ def analyze_image():
     def generate_text_route():
         # Implementation here
 
-    @app.route('/adios-task', methods=['POST'])
-    @swag_from('docs/adios_task.yml')
-    def adios_task():
-        # Implementation here
+        @app.route('/adios-task', methods=['POST'])
+        @swag_from('docs/adios_task.yml')
+        def adios_task():
+            # Implementation here
 
 
 
