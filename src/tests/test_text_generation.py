@@ -1,5 +1,5 @@
 import unittest
-from ai_modules.text_generation import generate_text
+from ai-modules.text_generation import generate_text
 
 class TestTextGeneration(unittest.TestCase):
 
