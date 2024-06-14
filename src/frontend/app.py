@@ -106,7 +106,7 @@ def analyze_image_swagger():
         def adios_task_swagger():
             # Implementation here
 
-        app.config.from_object(config)
+            app.config.from_object(config)
 
 celery = Celery(app.name, broker='redis://localhost:6379/0')
 celery.conf.update(app.config)
