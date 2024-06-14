@@ -13,8 +13,6 @@ from flask_caching import Cache
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from prometheus_flask_exporter import PrometheusMetrics
 
-
-
 app = Flask(__name__)
 app.config.from_object(config)
 
@@ -70,7 +68,7 @@ def adios_task():
 if __name__ == '__main__':
     app.run(debug=True)
 
-# Initialize logging
+    # Initialize logging
     if not app.debug:
         if not os.path.exists('logs'):
             os.mkdir('logs')
@@ -91,29 +89,24 @@ def unhandled_exception(e):
     app.logger.error(f'Unhandled Exception: {e}, route: {request.url}')
     return jsonify({'error': 'Unhandled Exception'}), 500
 
-app = Flask(__name__)
 swagger = Swagger(app)
 
 @app.route('/analyze-image', methods=['POST'])
 @swag_from('docs/analyze_image.yml')
-def analyze_image():
+def analyze_image_swagger():
     # Implementation here
 
-    @app.route('/generate-text', methods=['POST'])
-    @swag_from('docs/generate_text.yml')
-    def generate_text_route():
-        # Implementation here
+@app.route('/generate-text', methods=['POST'])
+@swag_from('docs/generate_text.yml')
+def generate_text_route_swagger():
+    # Implementation here
 
-        @app.route('/adios-task', methods=['POST'])
-        @swag_from('docs/adios_task.yml')
-        def adios_task():
-            # Implementation here
+@app.route('/adios-task', methods=['POST'])
+@swag_from('docs/adios_task.yml')
+def adios_task_swagger():
+    # Implementation here
 
-
-
-
-    app = Flask(__name__)
-    app.config.from_object(config)
+app.config.from_object(config)
 
 celery = Celery(app.name, broker='redis://localhost:6379/0')
 celery.conf.update(app.config)
@@ -123,7 +116,7 @@ def async_analyze_image(image_bytes):
     return predict(image_bytes)
 
 @app.route('/analyze-image', methods=['POST'])
-def analyze_image():
+def analyze_image_async():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'})
     file = request.files['file']
@@ -154,7 +147,6 @@ def task_status(task_id):
         }
     return jsonify(response)
 
-app = Flask(__name__)
 app.config['CACHE_TYPE'] = 'redis'
 cache = Cache(app)
 
@@ -163,7 +155,7 @@ def cached_analyze_image(image_bytes):
     return predict(image_bytes)
 
 @app.route('/analyze-image', methods=['POST'])
-def analyze_image():
+def analyze_image_cache():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part'})
     file = request.files['file']
@@ -173,7 +165,6 @@ def analyze_image():
         image_bytes = file.read()
         prediction = cached_analyze_image(image_bytes)
         return jsonify({'prediction': prediction})
-
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -203,8 +194,6 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
-
-
 metrics = PrometheusMetrics(app)
 
 @metrics.summary('request_processing_seconds', 'Time spent processing request')
@@ -213,4 +202,3 @@ def index():
     return render_template('index.html')
 
 # Add more metrics as needed
-
