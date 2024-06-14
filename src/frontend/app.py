@@ -113,7 +113,7 @@ def analyze_image():
 
 
     app = Flask(__name__)
-app.config.from_object(config)
+    app.config.from_object(config)
 
 celery = Celery(app.name, broker='redis://localhost:6379/0')
 celery.conf.update(app.config)
