@@ -96,10 +96,10 @@ swagger = Swagger(app)
 def analyze_image_swagger():
     # Implementation here
 
-@app.route('/generate-text', methods=['POST'])
-@swag_from('docs/generate_text.yml')
-def generate_text_route_swagger():
-    # Implementation here
+    @app.route('/generate-text', methods=['POST'])
+    @swag_from('docs/generate_text.yml')
+    def generate_text_route_swagger():
+        # Implementation here
 
 @app.route('/adios-task', methods=['POST'])
 @swag_from('docs/adios_task.yml')
