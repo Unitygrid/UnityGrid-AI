@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 import os
 from config import config
-from src.ai-modules.visual.visual_analysis import predict
-from src.ai-modules.text.text_generation import generate_text
-from src.ai-modules.blockchain.blockchain import secure_data
+from src.ai_modules.visual.visual_analysis import predict
+from src.ai_modules.text.text_generation import generate_text
+from src.ai_modules.blockchain.blockchain import secure_data
 from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
 import logging
 from logging.handlers import RotatingFileHandler
