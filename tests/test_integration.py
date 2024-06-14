@@ -1,5 +1,4 @@
 import pytest
-python
 from frontend.app import app, db
 from config import test_config
 
