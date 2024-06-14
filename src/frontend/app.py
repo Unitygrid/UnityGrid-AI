@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import os
-from config.py import config
+from Config import config
 from src.ai_modules.visual.visual_analysis import predict
 from src.ai_modules.text.text_generation import generate_text
 from src.ai_modules.blockchain.blockchain import secure_data
