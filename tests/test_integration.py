@@ -1,5 +1,6 @@
 import pytest
-from src.frontend.app import app, db
+python
+from frontend.app import app, db
 from config import test_config
 
 @pytest.fixture
