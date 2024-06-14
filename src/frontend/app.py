@@ -94,20 +94,20 @@ def unhandled_exception(e):
 app = Flask(__name__)
 swagger = Swagger(app)
 
-@app.route('/analyze-image', methods=['POST'])
-@swag_from('docs/analyze_image.yml')
-def analyze_image():
-    # Implementation here
+    @app.route('/analyze-image', methods=['POST'])
+    @swag_from('docs/analyze_image.yml')
+    def analyze_image():
+        # Implementation here
 
-@app.route('/generate-text', methods=['POST'])
-@swag_from('docs/generate_text.yml')
-def generate_text_route():
-    # Implementation here
+    @app.route('/generate-text', methods=['POST'])
+    @swag_from('docs/generate_text.yml')
+    def generate_text_route():
+        # Implementation here
 
-@app.route('/adios-task', methods=['POST'])
-@swag_from('docs/adios_task.yml')
-def adios_task():
-    # Implementation here
+    @app.route('/adios-task', methods=['POST'])
+    @swag_from('docs/adios_task.yml')
+    def adios_task():
+        # Implementation here
 
 
 
