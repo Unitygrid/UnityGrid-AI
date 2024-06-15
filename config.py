@@ -8,6 +8,10 @@ class Config:
     WEB3_PROVIDER_URI = os.environ.get('WEB3_PROVIDER_URI') or 'http://127.0.0.1:7545'
     CONTRACT_ADDRESS = os.environ.get('CONTRACT_ADDRESS')
     CONTRACT_ABI = os.environ.get('CONTRACT_ABI')
+    DEBUG = True
+    DATABASE_URI = 'sqlite:///:memory:'
+    
+    
 
 config = Config()
 
