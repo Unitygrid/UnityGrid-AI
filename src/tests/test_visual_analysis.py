@@ -1,6 +1,6 @@
 import unittest
 import pytest
-from ai_modules.visual.visual_analysis import analyze_image
+from src.ai_modules.visual.visual_analysis import analyze_image
 
 
 from src.ai_modules.visual.visual_analysis import predict
