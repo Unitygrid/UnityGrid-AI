@@ -22,3 +22,9 @@ def test_predict():
     with open(image_path, 'rb') as img:
         prediction = predict(img.read())
         assert prediction is not None
+
+def test_analyze_image():
+    image_path = 'src/tests/sample_image.jpg'
+    with open(image_path, 'rb') as img:
+        prediction = analyze_image(img.read())
+        assert prediction is not None

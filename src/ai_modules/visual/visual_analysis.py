@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 # Load a pre-trained ResNet model
-model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
+model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
 model.eval()
 
 # Define the image transformations
