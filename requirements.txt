@@ -4,3 +4,5 @@ autogen
 docker
 torch
 torchvision
+Pillow
+
