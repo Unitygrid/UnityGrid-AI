@@ -2,14 +2,15 @@ from web3 import Web3
 import os
 
 # Use Alchemy's URL as the provider
-alchemy_url = os.getenv('ALCHEMY_URL', 'https://eth-mainnet.alchemyapi.io/v2/YOUR_API_KEY')
+alchemy_url = os.getenv('ALCHEMY_URL', 'https://eth-mainnet.alchemyapi.io/v2/YOUR_ACTUAL_API_KEY')
 web3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 # Contract ABI and address
 contract_abi = [
     # ABI details here...
 ]
-contract_address = 'YOUR_CONTRACT_ADDRESS'
+contract_address = '0xYourContractAddressHere'  # Replace with your actual contract address
+
 
 # Initialize contract
 contract = web3.eth.contract(address=contract_address, abi=contract_abi)
