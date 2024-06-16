@@ -5,4 +5,4 @@ docker
 torch
 torchvision
 Pillow
-
+web3
