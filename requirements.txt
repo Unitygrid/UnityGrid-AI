@@ -4,4 +4,3 @@ autogen
 docker
 torch
 torchvision
-PIL
