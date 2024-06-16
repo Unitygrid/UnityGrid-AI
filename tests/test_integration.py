@@ -1,5 +1,6 @@
 import unittest
-from frontend.app import app, db
+import pytest
+from src.frontend.app import appimport app, db
 
 class TestIntegration(unittest.TestCase):
 
