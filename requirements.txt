@@ -6,3 +6,4 @@ torch
 torchvision
 Pillow
 web3
+pytest
