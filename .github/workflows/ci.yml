@@ -11,10 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     services:
-    ethereum:
-        image: trufflesuite/ganache-cli:latest
-        options: --network-alias localhost -p 8545:8545
-        
+      ethereum:
+          image: trufflesuite/ganache-cli:latest
+          options: --network-alias localhost -p 8545:8545
       redis:
         image: redis
         ports:
