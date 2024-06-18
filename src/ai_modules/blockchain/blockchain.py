@@ -2,7 +2,7 @@ from web3 import Web3
 import os
 
 # Use Alchemy's URL as the provider
-alchemy_url = os.getenv('ALCHEMY_URL', 'https://eth-mainnet.alchemyapi.io/v2/YOUR_ACTUAL_API_KEY')
+alchemy_url = os.getenv('ALCHEMY_API')
 web3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 # Contract ABI and address
