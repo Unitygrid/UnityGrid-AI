@@ -9,7 +9,7 @@ web3 = Web3(Web3.HTTPProvider(alchemy_url))
 contract_abi = [
     # ABI details here...
 ]
-contract_address = '0xYourContractAddressHere'  # Replace with your actual contract address
+contract_address = '0x994b342dd87fc825f66e51ffa3ef71ad818b6893'  # Replace with your actual contract address
 
 
 # Initialize contract
