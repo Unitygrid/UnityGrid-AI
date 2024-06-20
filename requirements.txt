@@ -11,3 +11,4 @@ flasgger
 celery
 flask_caching
 flask_login
+prometheus_flask_exporter
