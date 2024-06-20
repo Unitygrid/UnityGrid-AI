@@ -8,3 +8,4 @@ Pillow
 web3
 pytest
 flasgger
+celery
