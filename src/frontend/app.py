@@ -12,10 +12,9 @@ from celery import Celery
 from flask_caching import Cache
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from prometheus_flask_exporter import PrometheusMetrics
-from src.config import Config
 
 app = Flask(__name__)
-app.config.from_object(Config)
+app.config.from_object(config)
 
 # Load LLM inference endpoints from an env variable or a file
 config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
