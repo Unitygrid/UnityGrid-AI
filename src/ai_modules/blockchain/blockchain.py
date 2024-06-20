@@ -7,8 +7,16 @@ web3 = Web3(Web3.HTTPProvider(alchemy_url))
 
 # Contract ABI and address
 contract_abi = [
-    # ABI details here...
-]
+    # Replace with the actual ABI of your deployed contract
+    {
+        "constant": False,
+        "inputs": [{"name": "description", "type": "string"}],
+        "name": "logTask",
+        "outputs": [],
+        "payable": False,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }]
 contract_address = '0x994b342dd87fc825f66e51ffa3ef71ad818b6893'  # Replace with your actual contract address
 
 
