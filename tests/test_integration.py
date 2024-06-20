@@ -33,7 +33,3 @@ def test_adios_task(client):
     assert 'response' in response.get_json()
     assert 'task_id' in response.get_json()
 
-def test_some_function():
-    # Example of converting a non-checksum address to checksum address
-    non_checksum_address = '0x994b342dd87fc825f66e51ffa3ef71ad818b6893'
-    checksum_address = Web3.toChecksumAddress(non_checksum_address)

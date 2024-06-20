@@ -17,7 +17,8 @@ contract_abi = [
         "stateMutability": "nonpayable",
         "type": "function"
     }]
-contract_address = '0x994b342dd87fc825f66e51ffa3ef71ad818b6893'  # Replace with your actual contract address
+
+contract_address = Web3.to_checksum_address('0x994b342dd87fc825f66e51ffa3ef71ad818b6893'  ) # Replace with your actual contract address
 
 
 # Initialize contract
