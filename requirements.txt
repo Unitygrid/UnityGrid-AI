@@ -10,3 +10,4 @@ pytest
 flasgger
 celery
 flask_caching
+flask_login
