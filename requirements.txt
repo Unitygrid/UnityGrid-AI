@@ -12,3 +12,4 @@ celery
 flask_caching
 flask_login
 prometheus_flask_exporter
+flask-restful-swagger-2
