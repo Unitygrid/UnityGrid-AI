@@ -13,8 +13,13 @@ from flask_caching import Cache
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from prometheus_flask_exporter import PrometheusMetrics
 
+
+class Config:
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
+    # Add other configuration variables as needed
+
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object(Config)
 
 # Load LLM inference endpoints from an env variable or a file
 config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
