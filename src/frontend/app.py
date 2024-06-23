@@ -22,7 +22,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 # Load LLM inference endpoints from an env variable or a file
-config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
+config_list = config_list_from_json(os.environ.get("OAI_CONFIG_LIST"))
 
 # Create AutoGen agents
 assistant = AssistantAgent(name="assistant", llm_config={"config_list": config_list})
