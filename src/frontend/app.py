@@ -16,7 +16,7 @@ from prometheus_flask_exporter import PrometheusMetrics
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
-    # Add other configuration variables as needed
+    # Add other configuration variables as needed commit
 
 app = Flask(__name__)
 app.config.from_object(Config)
