@@ -7,7 +7,7 @@ from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
 
 import logging
 from logging.handlers import RotatingFileHandler
-from flasgger import Swagger
+from flasgger.utils import Swagger
 from celery import Celery
 from flask_caching import Cache
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
