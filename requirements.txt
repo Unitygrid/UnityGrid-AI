@@ -15,3 +15,4 @@ prometheus_flask_exporter
 flask-restful-swagger-2
 lru-dict
 flask-swagger-ui
+redis
