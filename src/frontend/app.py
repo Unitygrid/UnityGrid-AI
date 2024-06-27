@@ -12,7 +12,7 @@ from celery import Celery
 from flask_caching import Cache
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 from prometheus_flask_exporter import PrometheusMetrics
-from flask_swagger_ui import swag_from
+from flassger import swag_from
 
 
 class Config:
