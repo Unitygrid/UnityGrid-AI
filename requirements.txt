@@ -7,7 +7,7 @@ torchvision
 Pillow
 web3
 pytest
-flasgger
+flasgger 0.9.7.1
 celery
 flask_caching
 flask_login
