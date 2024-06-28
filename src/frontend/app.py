@@ -203,9 +203,9 @@ def logout():
 metrics = PrometheusMetrics(app)
 
 @metrics.summary('request_processing_seconds', 'Time spent processing request')
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 # Add more metrics as needed
 
