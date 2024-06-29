@@ -1,4 +1,5 @@
 import pytest
+import os
 from src.ai_modules.visual.visual_analysis import analyze_image
 
 def test_analyze_image():
