@@ -16,4 +16,4 @@ flask-restful-swagger-2
 lru-dict
 flask-swagger-ui
 redis
-openai==0.28
+openai==1.35.7
