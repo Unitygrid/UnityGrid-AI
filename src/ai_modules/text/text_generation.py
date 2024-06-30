@@ -1,6 +1,8 @@
 import openai
 import os
 
+# commit removed
+
 def generate_text(prompt):
     openai.api_key = os.getenv('OPENAI_API_KEY')
     if not openai.api_key:
