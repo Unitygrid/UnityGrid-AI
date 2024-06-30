@@ -4,7 +4,7 @@ import os
 # commit removed
 
 def generate_text(prompt):
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    openai.api_key = os.getenv('OPENAI_API')
     if not openai.api_key:
         raise ValueError("OPENAI_API_KEY environment variable not set.")
     
